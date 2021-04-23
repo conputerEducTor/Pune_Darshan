@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".Temples">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temples"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
+            <!-- 1st Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/dagadu"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/dagdu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Dagadu Sheth"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight"
+                        app:layout_constraintStart_toEndOf="@id/dagadu"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Since:- 1983 "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintTop_toBottomOf="@id/text2"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight"
+                        app:layout_constraintStart_toEndOf="@id/dagadu" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!--2nd Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort1"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/alandi"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/aalandi"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight1"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Aalandi Temple "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid1"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight1"
+                        app:layout_constraintStart_toEndOf="@id/alandi"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Since:- Around 16th Century"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_10ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text3"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight1"
+                        app:layout_constraintStart_toEndOf="@id/alandi" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- 3rd Card -->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort2"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort1"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/bhim"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/bhim"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight2"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Bhimashankar Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid2"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight2"
+                        app:layout_constraintStart_toEndOf="@id/bhim"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Sincce:- 13th Century "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text4"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight2"
+                        app:layout_constraintStart_toEndOf="@id/bhim" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- 4th Card -->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort3"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort2"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/chatur"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/chatur"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight3"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/chatur"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid3"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight3"
+                        app:layout_constraintStart_toEndOf="@id/chatur"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/Since_chatur"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text5"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight3"
+                        app:layout_constraintStart_toEndOf="@id/chatur" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- 5th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort4"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort3"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/jejuri"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/jejuri"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight4"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/jejuri"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid4"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight4"
+                        app:layout_constraintStart_toEndOf="@id/jejuri"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/Since_jejuri"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text6"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight4"
+                        app:layout_constraintStart_toEndOf="@id/jejuri" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <!-- 6th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort5"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort4"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/jain"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/jain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight5"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Jain Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid5"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight5"
+                        app:layout_constraintStart_toEndOf="@id/jain"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Late 20th Century "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text7"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight5"
+                        app:layout_constraintStart_toEndOf="@id/jain" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <!-- 7th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort6"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort5"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/dehu"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/dehu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight6"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Dehu Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid6"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight6"
+                        app:layout_constraintStart_toEndOf="@id/dehu"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Since:- 1723"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text8"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight6"
+                        app:layout_constraintStart_toEndOf="@id/dehu" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <!-- 8th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort7"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort6"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/parvati"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/parvati"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight7"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Parvati Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid7"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight7"
+                        app:layout_constraintStart_toEndOf="@id/parvati"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Since:-1749 "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text9"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight7"
+                        app:layout_constraintStart_toEndOf="@id/parvati" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <!-- 9th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort8"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort7"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/sangam"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/purandar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight8"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Sangameshwar Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid8"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight8"
+                        app:layout_constraintStart_toEndOf="@id/sangam"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Around 7th-10th Century "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text10"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight8"
+                        app:layout_constraintStart_toEndOf="@id/sangam" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <!-- 10th Card -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/fort9"
+                android:layout_width="392dp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@+id/fort8"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:neumorph_backgroundColor="@color/background"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/mor"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/moreshwar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="@dimen/_8sdp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRight9"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/right"
+                            android:tint="@color/primary"/>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guid9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="50dp" />
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Moreshwar Temple"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guid9"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight9"
+                        app:layout_constraintStart_toEndOf="@id/mor"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="reigned 1526–1530 "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_12ssp"
+
+                        app:layout_constraintTop_toBottomOf="@id/text11"
+                        app:layout_constraintEnd_toStartOf="@+id/cardRight9"
+                        app:layout_constraintStart_toEndOf="@id/mor" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
